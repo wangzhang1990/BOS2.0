@@ -100,7 +100,6 @@ public class CourierAction extends ActionSupport implements ModelDriven<Courier>
 			 * root 对象用来获取条件表达式的字段，比如获取" where name=？，age=？"中的"name"和"age"
 			 * CriteriaQuery 对象，可以构造简单查询条件，提供了一个where方法用来构造条件（暂解）
 			 * CriteriaBuilder 对象cb是用来构造Predicate对象的。有点类似于Hibernate中的Restrictions
-			 * 
 			 */
 			public Predicate toPredicate(Root<Courier> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
 				

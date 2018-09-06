@@ -9,11 +9,11 @@ import cn.itcast.bos.domain.base.Courier;
 
 public interface CourierRepository extends JpaRepository<Courier, Integer>, JpaSpecificationExecutor<Courier> {
 	
-	@Query("update Courier set deltag = '1' where id = ?")
+	@Query("update Courier set deltag = '1' where id = ?1")
 	@Modifying
 	void updateDelTag(Integer valueOf);
 	
-	@Query("update Courier set deltag = null where id = ?")
+	@Query("update Courier set deltag = null where id = ?1")
 	@Modifying
 	void restoreDelTag(Integer valueOf);
 	

@@ -1,4 +1,7 @@
 /common_parent/bos_management/target
 /common_parent/bos_management/src/main/webapp/easyuidemo
 /common_parent/.idea
+/common_parent/*.iml
+/common_parent/bos_management/*.iml
 /.idea
+/*.iml

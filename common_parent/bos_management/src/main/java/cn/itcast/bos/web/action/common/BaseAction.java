@@ -51,7 +51,7 @@ public class BaseAction<T> extends ActionSupport implements ModelDriven<T> {
 		this.rows = rows;
 	}
 	
-	protected void pushPageDateToValueStack(Page<Area> pageData) {
+	protected void pushPageDateToValueStack(Page<T> pageData) {
 		
 		
 		HashMap<Object, Object> resultMap = new HashMap<>();
